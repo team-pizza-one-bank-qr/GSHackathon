@@ -1,10 +1,12 @@
 import React from 'react';
+import ReactDOM from "react-dom";
+import QRCode from "react-qr-code";
 
 class QR extends React.Component {
   render() {
     return (
         <div>
-          <h2>QR Page</h2>
+          <center><QRCode value="heyiii" /></center>
         </div>
     );
   }
