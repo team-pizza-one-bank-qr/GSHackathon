@@ -7,9 +7,30 @@
 }
 
 .modal {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   background-color: white;
   box-shadow: 0 4px 10px rgb(0 0 0/ 15%);
-  padding: 40px;
   border-radius: 20px;
+  width: 60%;
+  height: auto;
+  justify-content: center;
+}
+
+.modal-header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-body {
+  padding: 100px 40px;
+  width: 80%;
+  overflow: hidden;
+}
+
+.modal-footer{
+  padding: 20px 40px;
+  border-top: 1px solid #dee2e6;
 }
