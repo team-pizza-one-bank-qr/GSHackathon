@@ -4,8 +4,8 @@ const Navbar = () =>{
   return (
     <div>
       <nav class="navbar navbar-light bg-light">
-        <div class="navbar-brand m-2">
-          ONEBANKQR
+        <div class="m-2">
+          <a class="navbar-brand" href="/">ONEBANKQR</a>
         </div>
         <div id="navbarSupportedContent">
              <ul class="navbar-nav mr-auto">

@@ -10,10 +10,12 @@
 
     .card {
         margin-left: 0 !important;
+        min-width: unset !important;
     }
 } 
 
 .card {
+    min-width: 400px;
     margin-left: 20px;
     box-shadow: 0 4px 10px rgb(0 0 0/ 15%);
 }

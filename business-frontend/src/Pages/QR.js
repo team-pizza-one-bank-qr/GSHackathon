@@ -18,7 +18,7 @@ const QR = () => {
                 <h5>Scan with your bank's app</h5>
                 <div class="mb-3">to register</div>
                 <div class="qr mb-3">
-                <QRCode value='https://qh2yo2dvoh.execute-api.ap-southeast-1.amazonaws.com/qr'/>
+                <QRCode class="svg" value='https://qh2yo2dvoh.execute-api.ap-southeast-1.amazonaws.com/qr'/>
                 </div>
               <div class='text-center'>
                 Use Password to log in instead
