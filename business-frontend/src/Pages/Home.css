@@ -1,0 +1,28 @@
+
+.swiper-container {
+    margin: 0 40px;
+}
+
+.swiper-wrapper > .swiper-slide {
+    height: auto;
+}
+
+.banner {
+    border-radius: 20px;
+    height: 100%;
+}
+
+.about {
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width: 720px){
+    .swiper-container {
+        margin: 0 !important;
+    }
+
+    .banner {
+        width: 100%;
+        border-radius: 0;
+    }
+}

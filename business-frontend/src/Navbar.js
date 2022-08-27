@@ -1,23 +1,29 @@
-import React from 'react';
-import "./Navbar.css"
+import React from "react";
+import "./Navbar.css";
+import logo from "./Logo.png";
 
-const Navbar = () =>{
+const Navbar = () => {
   return (
     <div class="decorate">
       <nav class="navbar navbar-light">
-        <div class="m-2">
-          <a class="pushright name" href="/">ONEBANKQR</a>
+        <div class="brand">
+          <img class="logo" src={logo}></img>
+          <a class="name" href="/">
+            ONEBANKQR
+          </a>
         </div>
-        <div id="navbarSupportedContent" class="pushleft">
-             <ul class="navbar-nav mr-auto">
-               <li class="nav-item active">
-                 <a class="btn btn-dark m-2" href="/QR" role="button">Get Started</a>
-               </li>
-             </ul>
-           </div>
-         </nav>
-       </div>
-     );
- }
+        <div class="get-started">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="btn btn-dark m-2" href="/QR" role="button">
+                Get Started
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  );
+};
 
- export default Navbar;
+export default Navbar;
