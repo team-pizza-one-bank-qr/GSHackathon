@@ -1,7 +1,12 @@
+.decorate {
+    background-color: #0BB6F1;
+
+}
+
 a.pushright {
     padding-left: 3em;
 }
 
-a.pushleft {
+.pushleft {
     margin-right: 3em;
 }

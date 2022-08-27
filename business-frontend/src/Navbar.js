@@ -5,10 +5,10 @@ const Navbar = () =>{
   return (
     <div>
       <nav class="navbar navbar-light bg-light">
-        <div class="m-2 decorate">
+        <div class="m-2">
           <a class="navbar-brand pushright" href="/">ONEBANKQR</a>
         </div>
-        <div id="navbarSupportedContent">
+        <div id="navbarSupportedContent" class="pushleft">
              <ul class="navbar-nav mr-auto">
                <li class="nav-item active">
                  <a class="btn btn-dark m-2" href="/QR" role="button">Get Started</a>
