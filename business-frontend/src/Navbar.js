@@ -1,15 +1,22 @@
-import React from 'react';
+import React from "react";
 
-class Navbar extends React.Component {
-    render() {
-      return (
-          <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Logo</a>
-            </nav>
+const Navbar = () =>{
+    return (
+      <div>
+        <nav class="navbar navbar-light bg-light">
+          <div class="navbar-brand m-2">
+            ONEBANKQR
           </div>
-      );
-    }
-  }
-  
-  export default Navbar;
+          <div id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="btn btn-dark m-2" href="/QR" role="button">Get Started</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    );
+}
+
+export default Navbar;
