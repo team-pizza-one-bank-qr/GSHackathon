@@ -1,11 +1,12 @@
 import React from 'react';
+import "./Navbar.css"
 
 const Navbar = () =>{
   return (
     <div>
       <nav class="navbar navbar-light bg-light">
-        <div class="m-2">
-          <a class="navbar-brand" href="/">ONEBANKQR</a>
+        <div class="m-2 decorate">
+          <a class="navbar-brand pushright" href="/">ONEBANKQR</a>
         </div>
         <div id="navbarSupportedContent">
              <ul class="navbar-nav mr-auto">
