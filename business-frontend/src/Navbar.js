@@ -3,10 +3,10 @@ import "./Navbar.css"
 
 const Navbar = () =>{
   return (
-    <div>
-      <nav class="navbar navbar-light bg-light">
+    <div class="decorate">
+      <nav class="navbar navbar-light">
         <div class="m-2">
-          <a class="navbar-brand pushright" href="/">ONEBANKQR</a>
+          <a class="pushright name" href="/">ONEBANKQR</a>
         </div>
         <div id="navbarSupportedContent" class="pushleft">
              <ul class="navbar-nav mr-auto">

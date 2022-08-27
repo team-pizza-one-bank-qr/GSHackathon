@@ -1,10 +1,16 @@
-.decorate {
-    background-color: #0BB6F1;
+div.decorate {
+    background-color: #32aad2;
+}
 
+.name {
+    border-radius: 3px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
 }
 
 a.pushright {
-    padding-left: 3em;
+    margin-left: 3em;
 }
 
 .pushleft {
