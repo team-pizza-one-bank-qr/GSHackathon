@@ -9,9 +9,6 @@ const QR = () => {
             <div>
               <h1 class="mb-4">Welcome to oneBankQR</h1>
               <h5 class="mb-3">Scan the QR Code now to establish your financial relationship!</h5>
-              <button class="btn btn-dark">
-                Click the button to establish a relationship
-              </button>
             </div>
             <div class="card p-5">
               <div class="cardbody">
