@@ -1,5 +1,8 @@
 # GSHackathon - OneBankQR
 
+- [Pitch Deck](/Pizza%20pitch.pdf)
+- [Pitch Video](/Pitch_video.MP4)
+
 ## Setting up
 
 1. Head to [Business Frontend](https://main.dggldc4s1btfu.amplifyapp.com/)
