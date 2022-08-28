@@ -8,7 +8,7 @@ const Navbar = () => {
         <div class="brand">
           <img class="logo" src="/Logo.png"/>
           <a class="name" href="/">
-            ONEBANKQR
+            OneBankQR
           </a>
         </div>
         <div class="get-started">

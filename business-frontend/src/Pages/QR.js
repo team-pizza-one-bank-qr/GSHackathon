@@ -21,7 +21,7 @@ const QR = () => {
     <div class="body pt-5 pb-5">
       <div class="container d-flex justify-content-between align-items-center">
         <div>
-          <h1 class="mb-4">Welcome to oneBankQR</h1>
+          <h1 class="mb-4">Welcome to OneBankQR</h1>
           <h5 class="mb-3">
             Scan the QR Code now to establish your financial relationship!
           </h5>
@@ -33,7 +33,7 @@ const QR = () => {
             <div class="qr mb-3">
               <div className="App">{QrImage && <QRCode value={QrImage} />}</div>
             </div>
-            <div class="text-center">Use Password to log in instead</div>
+            <div class="pw text-center">Use Password to log in instead</div>
           </div>
         </div>
       </div>

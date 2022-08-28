@@ -7,12 +7,12 @@ const App = () => {
 
   const Cancel = () => (
     <div id="Cancel">
-    <h1 class="msg">You have cancelled the session.</h1>
+    <h1 class="msg">You have cancelled the session with Business ID {business_id}.</h1>
   </div>
   )
   const Agree = () => (
     <div id="agree">
-      <h1 class="msg">You have agreed with establishing the relationship.</h1>
+      <h1 class="msg">You have agreed with establishing the relationship with Business ID <mark class="text-danger" style={{background: "transparent"}}>{business_id}</mark>.</h1>
     </div>
   )
   const checkEvent1 = () => {
@@ -40,7 +40,7 @@ const App = () => {
                 <div className="relative p-6 flex-auto">
                   <p className="my-4 text-slate-500 text-lg leading-relaxed">
                     Are you sure you want to proceed to establish the financial Relationship
-                    with business id <span className="text-red">{business_id}</span> ? By Agreeing,
+                    with business id <span className="text-danger">{business_id}</span> ? By Agreeing,
                     the process is non-revertible. 
                     <div className="mt-4">Click no if you wish to stop this process.</div>
                   </p>
