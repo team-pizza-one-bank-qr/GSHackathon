@@ -56,20 +56,13 @@ const Dashboard = () => {
                           </div>
                         </p>
                       </div>
-                      <div className="flex items-center justify-end p-4 border-t border-solid border-slate-200 rounded-b">
+                      <div>
                         <button
-                          className="btn btn-light"
+                          className="close-button btn btn-dark"
                           type="button"
                           onClick={() => setShowModal(false)}
                         >
                           Close
-                        </button>
-                        <button
-                          className="btn btn-dark"
-                          type="button"
-                          onClick={() => setShowModal(false)}
-                        >
-                          Agree
                         </button>
                       </div>
                     </div>
