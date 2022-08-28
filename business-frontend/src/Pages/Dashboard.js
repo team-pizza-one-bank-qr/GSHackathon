@@ -48,12 +48,7 @@ const Dashboard = () => {
                       </div>
                       <div className="relative p-6 flex-auto">
                         <p className="my-4 text-slate-500 text-lg leading-relaxed">
-                          Are you sure you want to proceed to establish the
-                          financial Relationship with business id{" "}
-                          By Agreeing, the process is non-revertible.
-                          <div className="mt-4">
-                            Click no if you wish to stop this process.
-                          </div>
+                          Relevant Info
                         </p>
                       </div>
                       <div>
