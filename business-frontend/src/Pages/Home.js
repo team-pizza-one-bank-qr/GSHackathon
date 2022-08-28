@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css";
 import "./Home.css";
-import SideBanner from "./SideBanner.webp"
+import SideBanner from "./SideBanner.webp";
 
 const Home = () => {
   return (
@@ -43,17 +43,25 @@ const Home = () => {
           to yield better KPIs.
         </p>
         <div class="card-holder">
-        <div class="about home-card card">
-          <div class="reason d-flex cardbody">
-            <div class="card-content col-6">
-              <h5>Scan with your bank's app</h5>
-              <div class="mb-6">to register</div>
-            </div>
-            <div class="sidebanner col-4">
-              <img class="sbimg" src={SideBanner}></img>
+          <div class="about home-card card">
+            <div class="reason d-flex cardbody">
+              <div class="card-content col-6">
+                <h5>Solution Outcome</h5>
+                <div class="mb-6">
+                  A Simple process to allow Clients to authorise Businesses to
+                  access their financial information. An Integration layer
+                  between Banks and Businesses to allow more efficient financial
+                  onboarding of Clients for Businesses.Provides financial
+                  inclusion to all industries. Centralise access to Client’s
+                  financial information (less points of failure for security
+                  leaks).
+                </div>
+              </div>
+              <div class="sidebanner col-4">
+                <img class="sbimg" src={SideBanner}></img>
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </div>
