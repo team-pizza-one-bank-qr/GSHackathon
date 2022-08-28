@@ -5,7 +5,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css";
 import "./Home.css";
-import SideBanner from "./SideBanner.webp";
 
 const Home = () => {
   return (
@@ -58,7 +57,7 @@ const Home = () => {
                 </div>
               </div>
               <div class="sidebanner col-4">
-                <img class="sbimg" src={SideBanner}></img>
+                <img class="sbimg" src="/SideBanner.webp"></img>
               </div>
             </div>
           </div>

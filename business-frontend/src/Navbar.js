@@ -1,13 +1,12 @@
 import React from "react";
 import "./Navbar.css";
-import logo from "./Logo.png";
 
 const Navbar = () => {
   return (
     <div class="decorate">
       <nav class="navbar navbar-light">
         <div class="brand">
-          <img class="logo" src={logo}></img>
+          <img class="logo" src="/Logo.png"/>
           <a class="name" href="/">
             ONEBANKQR
           </a>
