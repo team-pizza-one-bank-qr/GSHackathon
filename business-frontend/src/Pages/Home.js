@@ -1,17 +1,25 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "swiper/css";
 import "./Home.css";
+import SideBanner from "./SideBanner.webp"
 
 const Home = () => {
   return (
     <div class="body">
       <div class="swiper-container">
         <Swiper
+          modules={[Autoplay, Pagination]}
           class="mb-5 swiper"
           slidesPerView={1}
           loop={true}
-          navigation={true}
+          autoplay={{
+            delay: 10000,
+          }}
+          pagination={{ clickable: true }}
         >
           <SwiperSlide>
             <img
@@ -34,12 +42,18 @@ const Home = () => {
           preference to shop or interact with their financial institutions tend
           to yield better KPIs.
         </p>
+        <div class="card-holder">
         <div class="about card">
-          <div class="cardbody">
-            <h5>Scan with your bank's app</h5>
-            <div class="mb-3">to register</div>
-            <div class="text-center">Use Password to log in instead</div>
+          <div class="reason d-flex cardbody">
+            <div class="card-content col-6">
+              <h5>Scan with your bank's app</h5>
+              <div class="mb-6">to register</div>
+            </div>
+            <div class="sidebanner col-4">
+              <img class="sbimg" src={SideBanner}></img>
+            </div>
           </div>
+        </div>
         </div>
       </div>
     </div>
