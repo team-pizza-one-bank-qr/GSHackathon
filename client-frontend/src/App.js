@@ -1,19 +1,28 @@
-import { root } from "postcss";
 import React from "react";
 import "./App.css";
 
 const App = () => {
-  function setShowAgree (flag) {
-    if (flag == true) {
-      window.alert("You have agreed to establish the relatinship")
-    }
-  }
-  function setShowCancel (flag) {
-    if (flag == true) {
-      window.alert("You have cancelled the session")
-    }
-  }
+  const [ShowAgree, setShowAgree] = React.useState(false)
   const [showModal, setShowModal] = React.useState(true);
+
+  const Cancel = () => (
+    <div id="Cancel">
+    <h1 class="msg">You have cancelled the session.</h1>
+  </div>
+  )
+  const Agree = () => (
+    <div id="agree">
+      <h1 class="msg">You have agreed with establishing the relationship.</h1>
+    </div>
+  )
+  const checkEvent1 = () => {
+    setShowModal(false)
+    setShowAgree(false)
+  }
+  const checkEvent2 = () => {
+    setShowModal(false)
+    setShowAgree(true)
+  }
   const queryParams = new URLSearchParams(window.location.search);
   const business_id = queryParams.get("business_id");
   console.log(business_id);
@@ -40,13 +49,13 @@ const App = () => {
                   <button
                     className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
-                    onClick={() => {setShowModal(false); setShowCancel(true)}}>
+                    onClick={checkEvent1}>
                     Close
                   </button>
                   <button
                     className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
-                    onClick={() => {setShowModal(false); setShowAgree(true)}}>
+                    onClick={checkEvent2}>
                     Agree
                   </button>
                 </div>
@@ -54,7 +63,10 @@ const App = () => {
             </div>
           </div>
         
-      ) : null}
+      ) :   
+    (<div>
+    { ShowAgree ? <Agree /> : <Cancel /> }
+    </div>)}
     </>
   );
 };
