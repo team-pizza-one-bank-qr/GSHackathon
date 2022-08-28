@@ -1,7 +1,18 @@
+import { root } from "postcss";
 import React from "react";
 import "./App.css";
 
 const App = () => {
+  function setShowAgree (flag) {
+    if (flag == true) {
+      window.alert("You have agreed to establish the relatinship")
+    }
+  }
+  function setShowCancel (flag) {
+    if (flag == true) {
+      window.alert("You have cancelled the session")
+    }
+  }
   const [showModal, setShowModal] = React.useState(true);
   const queryParams = new URLSearchParams(window.location.search);
   const business_id = queryParams.get("business_id");
@@ -25,18 +36,17 @@ const App = () => {
                     <div className="mt-4">Click no if you wish to stop this process.</div>
                   </p>
                 </div>
-                {/*footer*/}
                 <div className="flex items-center justify-end p-4 border-t border-solid border-slate-200 rounded-b">
                   <button
                     className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
-                    onClick={() => setShowModal(false)}>
+                    onClick={() => {setShowModal(false); setShowCancel(true)}}>
                     Close
                   </button>
                   <button
                     className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
-                    onClick={() => setShowModal(false)}>
+                    onClick={() => {setShowModal(false); setShowAgree(true)}}>
                     Agree
                   </button>
                 </div>
