@@ -1,0 +1,7 @@
+th, td {
+    width: 300px;
+}
+
+.client-info-card {
+    z-index: 88;
+}

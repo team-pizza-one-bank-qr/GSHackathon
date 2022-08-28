@@ -35,25 +35,23 @@ const Home = () => {
         </Swiper>
         <h2 class="text-center mt-5">ABOUT ONEBANKQR</h2>
         <p class="text-center m-5">
-          Recently, there has been a consistent rise in competition within the
-          banking industry. Banks and leaders that are able to interact
-          effectively with their consumers regardless of the consumers
-          preference to shop or interact with their financial institutions tend
-          to yield better KPIs.
+        OneBankQR serves as an integration layer to generate dynamic QR codes for businesses to 
+        onboard clients to share financial information.
         </p>
         <div class="card-holder">
           <div class="about home-card card">
             <div class="reason d-flex cardbody">
-              <div class="card-content col-6">
-                <h5>Solution Outcome</h5>
-                <div class="mb-6">
-                  A Simple process to allow Clients to authorise Businesses to
-                  access their financial information. An Integration layer
-                  between Banks and Businesses to allow more efficient financial
-                  onboarding of Clients for Businesses.Provides financial
-                  inclusion to all industries. Centralise access to Client’s
-                  financial information (less points of failure for security
-                  leaks).
+              <div class="card-content col-7">
+                <h5>What?</h5>
+                <div class="mb-4">
+                An interface to allow communication with the integration layer within the native
+                bank application as well as central access to clients’ financial information.
+                </div>
+                <h5>Why?</h5>
+                <div class="mb-5">
+                The increasingly competitive climate of the banking industry means that banks need to 
+                focus on delivering the best consumer experience. Banks and leaders that are able to 
+                interact effectively with their consumers tend to yield higher conversion rates.
                 </div>
               </div>
               <div class="sidebanner col-4">
