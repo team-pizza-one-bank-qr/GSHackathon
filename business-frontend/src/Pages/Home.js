@@ -57,7 +57,7 @@ const Home = () => {
                 </div>
               </div>
               <div class="sidebanner col-4">
-                <img class="sbimg" src="/SideBanner.webp"></img>
+                <img class="sbimg" src="/SideBanner.webp" />
               </div>
             </div>
           </div>
