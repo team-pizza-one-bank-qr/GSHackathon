@@ -43,7 +43,7 @@ const Home = () => {
           to yield better KPIs.
         </p>
         <div class="card-holder">
-        <div class="about card">
+        <div class="about home-card card">
           <div class="reason d-flex cardbody">
             <div class="card-content col-6">
               <h5>Scan with your bank's app</h5>
